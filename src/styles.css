@@ -1,4 +1,21 @@
-h1 {
-  color: hotpink;
-  font-family: cursive;
+
+h1.title {
+  text-align: center;
+}
+
+#product-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+div.product {
+width: 311px;
+height: 470px;
+  background-color: antiquewhite;
+  margin: 20px;
+}
+
+div.product .product-name {
+  padding: 20px;
 }
