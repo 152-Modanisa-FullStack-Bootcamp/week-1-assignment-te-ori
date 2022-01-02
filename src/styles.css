@@ -1,4 +1,114 @@
-h1 {
-  color: hotpink;
-  font-family: cursive;
+body {
+  margin: 0;
+  background-color: blueviolet;
+  font-family: 'Poppins';
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#447cb3+0,8d55a1+100;Gold+3D */
+  background: #447cb3; /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    #447cb3 0%,
+    #8d55a1 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    #447cb3 0%,
+    #8d55a1 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    #447cb3 0%,
+    #8d55a1 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#447cb3', endColorstr='#8d55a1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  color: #999;
+  font-size: 14px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #c2bfbd;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #c2bfbd;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #c2bfbd;
+}
+
+.login-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-card {
+  background-color: #fff;
+  width: 350px;
+  border-radius: 20px;
+}
+
+#login-card h1 {
+  text-align: center;
+  color: #000;
+  border-bottom: 1px solid rgb(226, 216, 216);
+  padding-bottom: 16px;
+}
+
+#login-card .row {
+  margin-bottom: 20px;
+  padding: 0 35px;
+}
+
+#login-card .input {
+  display: flex;
+}
+
+#login-card .input input {
+  border: 0;
+  border-bottom: 2px #999 solid;
+  margin: 0;
+  padding: 1em 0.2em;
+  width: 100%;
+}
+
+#login-card .forgot a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #999;
+}
+
+#login-card .forgot a:hover {
+  color: rgb(61, 60, 60);
+}
+
+#login-card .submit button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4890d3;
+  border: 0;
+  border-radius: 22px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#login-card .submit button:hover {
+  cursor: pointer;
+}
+
+#login-card .signup {
+  text-align: center;
+}
+
+#login-card .signup a {
+  color: #0d5394;
+  text-decoration: none;
+}
+
+#login-card .signup a:hover {
+  color: #4890d3;
 }
