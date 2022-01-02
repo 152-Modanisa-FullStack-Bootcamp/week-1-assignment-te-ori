@@ -1,4 +1,122 @@
+body {
+  background-color: #f3f2ef;
+  font-family: 'Poppins';
+  font-size: 13px;
+}
+
 h1 {
   color: hotpink;
   font-family: cursive;
 }
+
+.linkedin-post {
+  background-color: #fff;
+  width: 400px;
+  margin-bottom: 15px;
+}
+/*#region header*/
+.linkedin-post .header{
+  display: flex;
+  padding: 5px 15px;
+}
+.linkedin-post .header img{
+  width: 64px;
+  height: 64px;
+}
+.linkedin-post .header .title{
+  flex-grow: 2;
+  padding: 0 10px;
+}
+
+.linkedin-post .header .title h3{
+  margin: 0;
+}
+.linkedin-post .header .title p{
+  margin: 0;
+  color: #897e6e;
+  font-size: 11px;
+}
+.linkedin-post .header  button{
+  border: 0;
+  background-color: #fff;
+  height: 14px;
+  margin: 0;
+}
+
+.linkedin-post .header button:hover{
+  cursor: pointer;
+}
+
+/*#endregion header*/
+
+/*#region description*/
+.linkedin-post p.description {
+  padding: 0 15px;
+  position: relative;
+  margin: 0 0 10px 0;
+}
+
+.linkedin-post p.description .see-more {
+  position: absolute;
+  bottom: 0;
+  right: 12px;
+  background-color: #fff;
+  padding: 0 5px;
+  text-decoration: none;
+  color: #897e6e;
+}
+/*#endregion description*/
+
+/*#region content*/
+
+.linkedin-post .content {
+  background-color: #eef3f8;
+}
+
+.linkedin-post .content img{
+  width: 400px;
+}
+.linkedin-post .content h3 {
+  margin: 0;
+  padding: 0 15px;
+}
+.linkedin-post .content span.info {
+  padding: 0 15px;
+  font-size: 11px;
+  color: #897e6e;
+}
+/*#endregion content*/
+
+/*#region reactions*/
+.linkedin-post .reactions {
+  display: flex;
+  justify-content: space-between;
+  color: #897e6e;
+  padding: 0 0 15px 0;
+  margin:  15px;
+  border-bottom: 1px solid #f8f5f0;
+}
+.linkedin-post .reactions button {
+  border: 0;
+  border-radius: 50%;
+}
+
+.linkedin-post .reactions button.like {
+  background-color: #29a311;
+}
+/*#endregion reactions*/
+
+/*#region actions*/
+.linkedin-post .actions {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+.linkedin-post .actions button {
+  border: 0;
+  background-color: #fff;
+  color: #897e6e;
+  font-weight: bold;
+  cursor: pointer;
+}
+/*#endregion actions*/
