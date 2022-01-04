@@ -4,7 +4,8 @@
   "description": "Vanilla JS Project template for Modanisa Bootcamp",
   "main": "index.js",
   "scripts": {
-    "start": "yarn parcel src/index.html"
+    "start": "yarn parcel src/index.html",
+    "test": "cucumber-js test/features"
   },
   "repository": {
     "type": "git",
