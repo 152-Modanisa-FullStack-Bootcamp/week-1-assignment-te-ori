@@ -11,11 +11,11 @@ When('Open index page', async function(){
 });
 
 Then('Check post', async function(){
-    let post_count = await this.page.$$(".linkedin-post").length;
+    let post_count = (await this.page.$$(".linkedin-post")).length;
     await this.page.close();
     await this.browser.close();
 
-    if (post_count != 2) {
+    if (post_count !== 2) {
         throw new Error("Wrong count");
     }
 });
