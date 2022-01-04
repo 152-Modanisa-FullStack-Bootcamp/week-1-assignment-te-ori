@@ -13,7 +13,7 @@ When('Open index page', async function () {
     await this.page.goto('http://localhost:1234');
 });
 
-Then('See products which name\'s contain \'Şal\'', async function () {
+Then('See products which name\'s contain {string}', async function (keyword) {
     await this.page.waitFor(2000);
     const product_boxes_count = (await this.page.$$('.product')).length;
     const product_names = await this.page.evaluate(() =>
@@ -22,7 +22,7 @@ Then('See products which name\'s contain \'Şal\'', async function () {
             (element) => element.textContent
         )
     );
-    const product_names_sal_count = product_names.filter(name => name.includes('Şal')).length;
+    const product_names_sal_count = product_names.filter(name => name.includes(keyword)).length;
     
     await this.page.close();
     await this.browser.close();

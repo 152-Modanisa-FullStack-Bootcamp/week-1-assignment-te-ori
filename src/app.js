@@ -49,7 +49,7 @@ axios
     // Get all products that contain "Şal" in their name (use filter method)
     // map filtered products to new object having only image and name field
     // assign mapped items to mappedProducts variable
-    const mappedProducts = products.filter(product => true || product.name.includes('Şal'))
+    const mappedProducts = products.filter(product => product.name.includes('Şal'))
       .map(product => ({ name: product.name, image: product.image }));
     console.log('mapped products', mappedProducts);
     
