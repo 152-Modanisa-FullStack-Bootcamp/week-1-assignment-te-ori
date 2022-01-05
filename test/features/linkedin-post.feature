@@ -1,5 +1,5 @@
-Feature: Display post screen
-    Scenario: To see post screen.
-        Given The browser is open
-        When Open index page
-        Then Check post
+Feature: Linkedin Post
+    Scenario: To see linkedin post
+        Given Open the browser
+        When Navigate to index page
+        Then You should see at least one post
