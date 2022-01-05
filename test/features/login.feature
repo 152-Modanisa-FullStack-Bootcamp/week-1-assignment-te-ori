@@ -1,6 +1,5 @@
-@login
-Feature: Display login screen
+Feature: Login Screen
     Scenario: To see login screen.
         Given The browser is open
         When Open index page
-        Then Check inputs
+        Then You should see login form
